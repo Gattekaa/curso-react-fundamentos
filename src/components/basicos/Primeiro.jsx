@@ -1,13 +1,13 @@
 import React from 'react'
 
-export default function Primeiro() {
+export default function Primeiro(params) {
 
     const msg = 'Seja bem vindo'
 
     return (
         <div>
             <h2>Primeiro Componente</h2>
-            <p>{ msg }</p>
+            <p>{msg}</p>
         </div>
     )
 
