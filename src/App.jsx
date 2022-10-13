@@ -5,18 +5,22 @@ import ComParametro from './components/basicos/ComParametro';
 import Fragmento from './components/Fragmento';
 import Aleatorio from "./components/basicos/Aleatorio";
 import Card from "./components/layout/Card";
+import ParOuImpar from './components/condicional/ParOuImpar.tsx';
 import Familia from './components/basicos/Familia';
 import FamiliaMembro from './components/basicos/FamiliaMembro';
 import ListaAlunos from './components/repeticao/ListaAlunos';
 import TabelaProdutos from './components/repeticao/TabelaProdutos';
 
 
-export default (props) => {
+export default () => {
     return (
         <div className="App">
             <h1>Fundamentos React</h1>
 
             <div className="Cards">
+            <Card titulo="#08 Renderização Condicional" color="#982395">
+                <ParOuImpar numero={20}></ParOuImpar>
+            </Card>
             <Card titulo="#07 Desafio Repetição" color="#FF432E">
                 <TabelaProdutos />
             </Card>
