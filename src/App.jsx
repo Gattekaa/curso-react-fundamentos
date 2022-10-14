@@ -13,14 +13,25 @@ import TabelaProdutos from './components/repeticao/TabelaProdutos';
 import UsuarioInfo from './components/condicional/Usuarioinfo';
 import DiretaPai from './components/comunicacao/DiretaPai';
 import IndiretaPai from './components/comunicacao/IndiretaPai';
+import Input from './components/formulario/Input';
+import Contador from './components/contador/Contador';
+import Mega from './components/mega/Mega';
 
 
-export default () => {
+const App =  () => {
     return (
         <div className="App">
             <h1>Fundamentos React</h1>
-
+            <Card titulo="#13 - Mega" color="#B9006E">
+                <Mega qtde={8}></Mega>
+            </Card>
+            <Card titulo="#12 Contador" color="#424242">
+                <Contador numeroInicial={10}/>
+            </Card>
             <div className="Cards">
+            <Card titulo="#11 Componente Controlado" color="#E45F56">
+                <Input />
+            </Card>
             <Card titulo="#10 Comunicação Indireta" color="#8BAD39">
                 <IndiretaPai />
             </Card>
@@ -64,3 +75,5 @@ export default () => {
         </div >
     )
 }
+
+export default App
